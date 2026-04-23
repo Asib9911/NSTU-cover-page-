@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NSTU Cover Page Generator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="form-box">
+
+<h2>NSTU Cover Generator</h2>
+
+<input id="title" placeholder="Report Title">
+<input id="course" placeholder="Course Name">
+<input id="code" placeholder="Course Code">
+
+<input id="student" placeholder="Student Name">
+<input id="sid" placeholder="Student ID">
+<input id="year" placeholder="Year">
+<input id="term" placeholder="Term">
+
+<input id="teacher" placeholder="Teacher Name">
+<input id="designation" placeholder="Designation">
+
+<button onclick="generate()">Generate</button>
+<button onclick="downloadPDF()">Download PDF</button>
+
+</div>
+
+
+<div id="cover">
+
+<h1 id="t1">A Report Title</h1>
+
+<p><b>Course Name:</b> <span id="c1"></span></p>
+<p><b>Course Code:</b> <span id="c2"></span></p>
+
+<table>
+<tr>
+<th>Submitted by:</th>
+<th>Submitted to:</th>
+</tr>
+
+<tr>
+<td>
+<b id="s1"></b><br>
+ID: <span id="s2"></span><br>
+Year: <span id="s3"></span> Term: <span id="s4"></span><br>
+Department of Agriculture,<br>
+Noakhali Science and Technology University
+</td>
+
+<td>
+<b id="t2"></b><br>
+<span id="t3"></span><br>
+Department of Agriculture,<br>
+Noakhali Science and Technology University
+</td>
+</tr>
+</table>
+
+<img src="logo.png" class="logo">
+
+<h2 class="green">Department of Agriculture</h2>
+<h2>Noakhali Science and Technology University</h2>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
